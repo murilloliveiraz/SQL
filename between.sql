@@ -15,3 +15,11 @@ SELECT *
 FROM HumanResources.Employee
 WHERE HireDate BETWEEN '2009/01/01'  and '2009/06/30'
 order by HireDate;
+SELECT COUNT (*)
+FROM Production.Product
+WHERE color = 'red'
+AND ListPrice BETWEEN 500 and 1000;
+
+SELECT COUNT (*)
+FROM Production.Product
+WHERE Name like '%road%';
